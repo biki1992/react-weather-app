@@ -1,0 +1,62 @@
+.form {
+  margin-top: 3rem;
+}
+.form__city {
+  margin-bottom: 0.8rem;
+  width: 30%;
+  border: none;
+  border-bottom: 1px solid #242424;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+}
+.form__country {
+  margin-bottom: 0.8rem;
+  width: 30%;
+  border: none;
+  border-bottom: 1px solid #242424;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="text"]:hover {
+  transform: scale(1.2);
+}
+
+.form__button {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #242424;
+  border-radius: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.form__button:focus {
+  outline: none;
+}
+.form__button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.form__label {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .form input[type="text"] {
+    display: block;
+    clear: right;
+    width: 65%;
+    float: right;
+  }
+  .form__label {
+    margin-top: 1.5rem;
+    display: block;
+    text-align: justify;
+    clear: both;
+    float: left;
+    margin-right: 0.5rem;
+  }
+}
